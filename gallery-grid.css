@@ -1,0 +1,75 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial';
+}
+
+body {
+  background-image: url('https://asset.gecdesigns.com/img/wallpapers/aesthetic-landscape-reflection-background-hd-wallpaper-sr10012410-1706502139247-cover.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+main {
+  min-height: calc(100vh - 200px);
+  min-width: calc(100vw - 200px);
+  margin: 100px;
+}
+
+.gallerie {
+  padding: 20px;
+  min-height: calc(100vh - 200px);
+  max-width: calc(100vw - 240px);
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px 20px;
+  clip-path: polygon(0 7%, 100% 0%, 100% 93%, 0% 100%);
+  background-color: rgba(251, 251, 251, 0.25);
+}
+
+.image {
+  
+  &:nth-child(1) {
+    clip-path: polygon(0% 40%, 100% 30%, 100% 100%, 0 100%);
+  }
+  
+  &:nth-child(2) {
+    clip-path: polygon(0 30%, 100% 20%, 100% 100%, 0 100%);
+  }
+  
+  &:nth-child(3) {
+    clip-path: polygon(0 20%, 100% 10%, 100% 100%, 0 100%);
+  }
+  
+  &:nth-child(4) {
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+  }
+  
+  &:nth-child(17) {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  }
+  
+  &:nth-child(18) {
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 90%);
+  }
+  
+  &:nth-child(19) {
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 80%);
+  }
+  
+  &:nth-child(20) {
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 0 70%);
+  }
+  
+  img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+  }
+}
